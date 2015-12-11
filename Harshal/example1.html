@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="">
+<title>First Angular JS example</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div>
+<p>Type your name</p>
+<p>Name: <input type="text" ng-model="name"></p>
+<p ng-bind="name"></p>
+</div>
+
+<hr>
+
+<div ng-app="" ng-init="a=1;b=5">
+<p>The addition is: {{ a+b }}</p>
+</div>
+
+<hr>
+
+<div ng-init="x=3;y=5">
+<p>The multiplication is: <span ng-bind="x * y"></span></p>
+</div>
+
+</body>
+</html>
